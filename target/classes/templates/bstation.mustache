@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <div>
+         <form method="post">
+                <input type="text" name="name" placeholder="Enter a description of the base station" />
+                <input type="number" step="any" name="x" placeholder="X position x" />
+                <input type="number" step="any" name="y" placeholder="Y position y" />
+                <input type="number" step="any" name="detectionRadiusInMeters" placeholder="Detection Radius In Meters" />
+                <button type="submit">Добавить</button>
+         </form>
+    </div>
+    <div>
+        {{#baseStations}}
+        <div>
+            <b>{{id}}</b>
+            <span>{{name}}</span>
+            <i>{{x}}</i>
+            <i>{{y}}</i>
+            <i>{{detectionRadiusInMeters}}</i>
+        </div>
+        {{/baseStations}}
+    </div>
+</body>
+
+</html>
+
+<html>
